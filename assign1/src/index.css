@@ -3,71 +3,292 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    background: linear-gradient(to bottom right, #eef2f3, #8e9eab);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-/* Styling for the Navigation Bar */
-.navbar {
-  background-color: #333;
-  padding: 10px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  display: inline;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
-}
-
-.nav-links li a:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
-
-/* Styling for the Home Page Content */
 .home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.home-container {
+  background-image: url('./assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fefffd;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #dac6c6;
+  margin-bottom: 20px;
+}
+
+.mission-input {
+  width: 80%;
+  max-width: 600px;
+  height: 100px;
+  padding: 10px;
+  font-size: 1rem;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  resize: none;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.home-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  opacity: 0.1;
+  animation: gradientAnimation 5s ease infinite;
+  z-index: 0;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: white;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 80px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 50px;
+  color: #333;
+}
+
+.about-text h2 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.about-text p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.about-text p span {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.about-text .quote {
+  font-style: italic;
+  margin-top: 40px;
+  color: #666;
+  font-size: 1.4em;
+}
+
+img {
+  width: 200px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.resume-section {
   text-align: center;
   margin-top: 50px;
 }
 
-.home-content h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.home-content p {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
+.resume-section .button {
+  background-color: #007bff;
   color: white;
-  text-decoration: none;
+  padding: 12px 24px;
   border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-section .button:hover {
+  background-color: #0056b3;
+}
+
+.resume-section a {
+  text-decoration: none;
+}
+
+button.button {
+  background-color: #f8c12a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.button:hover {
+  background-color: #c59d18;
+}
+
+
+.contact-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #343a40;
+}
+
+.contact-container form input,
+.contact-container form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-container form textarea {
+  min-height: 150px;
+}
+
+.contact-container form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  background-color: #f8c12a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
   border-radius: 5px;
 }
+.services-container {
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
-.button:hover {
-  background-color: #45a049;
+.services-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 2em;
+}
+
+.services-container ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services-container li {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #e0e0e0;
+}
+
+.services-container li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.services-container img {
+  margin-right: 15px;
+  border-radius: 6px;
+  width: 80px;
+  height: auto;
+}
+
+.services-container span {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
 }

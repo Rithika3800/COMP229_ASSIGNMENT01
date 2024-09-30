@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 const ContactMe = () => {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -18,7 +17,7 @@ const ContactMe = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Message sent!"); // Replace with actual form submission logic
+    alert("Message sent!"); 
     setFormData({
       firstName: '',
       lastName: '',

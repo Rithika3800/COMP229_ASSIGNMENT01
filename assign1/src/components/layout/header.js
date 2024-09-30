@@ -20,13 +20,23 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/projects">
-                  <i className="fas fa-project-diagram"></i> Projects
+                <NavLink className="nav-link" to="/about">
+                  <i className="fa-solid fa-address-book"></i> AboutMe
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/about">
-                  <i className="fa-solid fa-address-book"></i> About
+                <NavLink className="nav-link" to="/projects">
+                  <i className="fas fa-project-diagram"></i> Projects
+                </NavLink>
+                </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/contact">
+                  <i className="fa-solid fa-address-book"></i>Contact
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/services">
+                  <i className="fa-solid fa-address-book"></i> services
                 </NavLink>
               </li>
             </ul>
