@@ -1,14 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-
+import { Outlet, NavLink, Link } from "react-router-dom";
 const Home = () => {
-  return (
-    <div className="home-container">
-      <h1>Welcome to My Portfolio</h1>
-      <p>My mission is to leverage technology to solve problems and improve lives.</p>
-      <Link to="/About" className="button">Learn More About Me</Link>
-    </div>
-  );
+    return (
+        <>
+            <div>
+              <main>
+              <h1><b>Welcome to My portfolio</b></h1>
+                <h2>My Mission</h2>
+                <p>My mission is to leverage technology to solve problems.</p>
+                <p>
+                  <NavLink className="home-link" to="/about">About Me</NavLink>
+                </p>
+              </main>
+              
+
+            </div>
+        </>
+    )
 };
 
 export default Home;

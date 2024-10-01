@@ -11,7 +11,7 @@ const AboutMe = () => {
             Hello, I'm <span>Rithika Raj Kumar</span>, a passionate software engineer focused on web and mobile development. I am currently pursuing my diploma at centennial college Toronto,ON.
           </p>
           <p>
-            My journey in software engineering began with a strong interest in solving real-world problems using technology. Over time, I have honed my skills in programming languages like <span>JavaScript, React, Node.js, CSS, and HTML</span>, allowing me to build efficient, scalable applications.
+          My passion for applying technology to solve practical issues led me to pursue a career in software engineering. My proficiency in programming languages has improved over time in areas like <span>JavaScript, React, Node.js, CSS, and HTML</span>, allowing me to build efficient, scalable applications.
           </p>
           <p>
             I am particularly passionate about web development and enjoy working on projects that have a positive impact on users' lives. </p>

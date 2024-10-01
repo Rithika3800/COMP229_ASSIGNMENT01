@@ -6,18 +6,18 @@ import programming from '../assets/programming.jpeg';
 const Services = () => {
   return (
     <div className="services-container">
-      <h2>Services Offered</h2>
+      <h2><b>Services</b></h2>
       <ul>
         <li>
-          <img src={webDevelopment} alt="Web Development" style={{ width: '100px', height: 'auto' }} />
+          <img src={webDevelopment} alt="Web Development"/>
           <span>Web Development</span>
         </li>
         <li>
-          <img src={mobile} alt="Mobile Application Development" style={{ width: '100px', height: 'auto' }} />
+          <img src={mobile} alt="Mobile Application Development" />
           <span>Mobile Application Development</span>
         </li>
         <li>
-          <img src={programming } alt="Software Solutions" style={{ width: '100px', height: 'auto' }} />
+          <img src={programming } alt="Software Solutions" />
           <span>Software Solutions</span>
         </li>
       </ul>

@@ -1,4 +1,4 @@
-import { Outlet, NavLink} from "react-router-dom";
+import { Outlet, NavLink,Link} from "react-router-dom";
 import image_logo from "../../assets/Logo maker project.png"
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <NavLink className="nav-link" to="/">
-                  <i className="fas fa-home"></i> Home
+                  <i className="fas fa-home"></i> Home 
                 </NavLink>
               </li>
               <li className="nav-item">
